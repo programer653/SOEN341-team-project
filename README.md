@@ -5,10 +5,10 @@
 
 
 ## :bulb:Objective
-The objective of this project is to implement a simplified version of Amazon (online shopping website) that will provide customers with the 24/7 shopping service. This repository holds all the information of ths online shopping website. The data stored includes the team member information, the source code of the website, sprints following the agile methodology, and any other important documents.
+The objective of this project is to implement a simplified version of Amazon (online shopping website) that will provide customers with the 24/7 shopping service. This repository holds all the information of the online shopping website. The data stored includes the team member information, the source code of the website, sprints following the agile methodology, and any other important documents.
 
 ## :mag_right:Description
-The globalisation process has led the online shopping malls develop more and more rapidly while the onsite stores has been nagetively affected. To keep up with the times, more and more small e-commerce platforms are being developed to provide customers with convenient shopping services.
+The globalisation process has led the online shopping malls develop more and more rapidly while the onsite stores has been negatively affected. To keep up with the times, more and more small e-commerce platforms are being developed to provide customers with convenient shopping services.
 
 
 ## :memo:Core Features
