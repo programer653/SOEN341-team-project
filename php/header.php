@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php session_start();?>
 <head>
     <title>WayToHealth</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,9 +29,30 @@
                 <div class="navbar-right-top">
                     <ul>
                         <!--contact-->
-                        <li><a href="../php/p5.php">Log in</a></li>
+                        <li>
+                        <?php
+                        if(isset($_SESSION["Username"])){
+                            echo $_SESSION["Username"];
+                        }else{
+                            $link="../php/p5.php";
+                            echo '<a href="'.$link.'">Log in</a>';
+                        }
+                        
+                        ?>   
+                        
+                        </li>
                         <!--user-->
-                        <li><a href="../php/p6.php">Sign up</a></li>
+                        <li>
+                        <?php if(isset($_SESSION["Username"])){
+                            $link="../php/logout.php";
+                            echo '<a href="'.$link.'">Log out</a>';
+                        }else{
+                            $link="../php/p6.php";
+                            echo '<a href="'.$link.'">Sign up</a>';
+                        } 
+                       ?>
+                        </li>
+                        
                         <!--shopping cart-->
                         <li class="cart-icon">
                             <a href="../php/p4_shopCart.php"><img src="../images/cart.png" alt="icon of cart" width="30px"></a>
