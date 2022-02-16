@@ -80,6 +80,9 @@
                         <li><a href="../php/p7.php">Products List</a></li>
                     </ul>
                 </li>
+                <li>
+                    <a href="../php/promotionPage.php">Promotion</a>
+                </li>
             </ul>
         </div>
     </nav>
