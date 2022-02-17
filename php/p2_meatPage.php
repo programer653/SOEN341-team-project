@@ -12,7 +12,7 @@
         <div class="row">
             <div class="products-row1">
                 <div class="products-col">
-                    <a href="p3_meat_cut-chuck-roast.html">
+                    <a href="../php/cut_chuck_roast1.php">
                         <img src="../images/Meat/cut-chuck-roast.jpg" alt="#">
                         <h4>Cut Chuck Roastt</h4>
                     </a>
@@ -21,7 +21,7 @@
                     <p>$22.02 /kg$9.99 /lb.</p>
                 </div>
                 <div class="products-col">
-                    <a href="p3_meat_porkTenderloin.html">
+                    <a href="../php/pork_tenderloin.php">
                         <img src="../images/Meat/porkTenderloin.jpeg" alt="#">
                         <h4>Pork Tenderloin</h4>
                     </a>
@@ -32,7 +32,7 @@
             </div>
             <div class="products-row2">
                 <div class="products-col">
-                    <a href="p3_meat_chickenLegs.html">
+                    <a href="../php/chicken_legs.php">
                         <img src="../images/Meat/chickenLegs.jpg" alt="#">
                         <h4>Chicken Legs</h4>
                     </a>
@@ -41,7 +41,7 @@
                     <p>$7.69 /kg$3.49 /lb.</p>
                 </div>
                 <div class="products-col">
-                    <a href="p3_meat_leanGroundBeef.html">
+                    <a href="../php/lean_ground_beef.php">
                         <img src="../images/Meat/LeanGroundBeef.jpg" alt="#">
                         <h4>Lean Ground Beef</h4>
                     </a>
