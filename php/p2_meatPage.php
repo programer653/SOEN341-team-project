@@ -14,7 +14,7 @@
                 <div class="products-col">
                     <a href="p3_meat_cut-chuck-roast.html">
                         <img src="../images/Meat/cut-chuck-roast.jpg" alt="#">
-                        <h4>Cut Chuck Roast</h4>
+                        <h4>Cut Chuck Roastt</h4>
                     </a>
                     <p class="new-price"><strong>$22.02 avg. ea.</strong></p>
                     <p>(1000g avg.)</p>
