@@ -1,1 +1,2 @@
-blank
+language: java
+script: ant compile 
