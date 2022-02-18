@@ -3,27 +3,28 @@
 
 <?php
 
-#include the header of the website
-include '../php/header.php';
+    #include the header of the website
+    include '../php/header.php';
 
-#include the connection to the database
-include '../php/dbConn.php';
+    #include the connection to the database
+    include '../php/dbConn.php';
 
 
 
-$sql = "SELECT * FROM members ";
-//$sql = "SELECT * FROM `product table`;";
+    $sql = "SELECT * FROM members ";
+    //$sql = "SELECT * FROM `product table`;";
 
-//searching for the name
-if(isset($_POST['search'])){
-    $search_term = mysqli_real_escape_string($_POST['search_box']);
+    //searching for the name
+    if(isset($_POST['search'])){
+        $search_term = mysqli_real_escape_string($_POST['search_box']);
 
-    $sql .= "WHERE name = '{$search_term}'";
+        $sql .= "WHERE product_id = '{$search_term}'";
 
-    $sql .= " OR level = '{$search_term}'";
+        $sql .= " OR price = '{$search_term}'";
 
-}
-$query = mysqli_query($sql) or die(mysqli_error());
+    }
+
+    $query = mysqli_query($sql) or die(mysqli_error());
 
 ?>
 
