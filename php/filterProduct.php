@@ -9,10 +9,8 @@
     #include the connection to the database
     include '../php/dbConn.php';
 
+    $sql = "SELECT * FROM product_table ";
 
-
-    $sql = "SELECT * FROM members ";
-    //$sql = "SELECT * FROM `product table`;";
 
     //searching for the name
     if(isset($_POST['search'])){
