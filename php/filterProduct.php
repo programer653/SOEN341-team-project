@@ -1,50 +1,81 @@
+
+<body>
+
 <?php
 
-#this is going to be calling the database
-include "dbConn.php";
+#include the header of the website
+include '../php/header.php';
 
-$sql = "SELECT * FROM members";
+#include the connection to the database
+include '../php/dbConn.php';
 
-$query = mysql_query($sql) or die(mysql_error());
+
+
+$sql = "SELECT * FROM members ";
+//$sql = "SELECT * FROM `product table`;";
+
+//searching for the name
+if(isset($_POST['search'])){
+    $search_term = mysqli_real_escape_string($_POST['search_box']);
+
+    $sql .= "WHERE name = '{$search_term}'";
+
+    $sql .= " OR level = '{$search_term}'";
+
+}
+$query = mysqli_query($sql) or die(mysqli_error());
 
 ?>
-<!--
 
-product_id	price	quantity	name	category	description	images
 
--->
-<table width = "70%" cellpadding="5">
-    <tr>
-        <td>Product ID</td>
-        <td>Price</td>
-        <td>Quantity</td>
-        <td>Name</td>
-        <td>Category</td>
-        <td>Description</td>
-        <td>Images</td>
-    </tr>
 
-    <?php while ($row mysql_fetch_array($query)){ ?>
+    <!-- when doing a search, it is going to be finding it in the database --!>
+    <form name="search_form" method="POST" action="filterProduct.php">
+        Search: <input type="text" name="search_box" value="" />
+        <input type ="submit" name ="search" value="Search the table...">
+    </form>
+
+
+    <!--category of products
+    product_id	price	quantity	name	category	description	images
+    -->
+    <table style = width="70%" cellspace="5">
         <tr>
-            <td><?php echo $row['Product']; ?></td>
-            <td><?php echo $row['Price']; ?></td>
-            <td><?php echo $row['Quantity']; ?></td>
-            <td><?php echo $row['Name']; ?></td>
-            <td><?php echo $row['Category']; ?></td>
-            <td><?php echo $row['Description']; ?></td>
-            <td><?php echo $row['Image']; ?></td>
-
+            <td><strong>product_id</strong></td>
+            <td><strong>price</strong></td>
+            <td><strong>quantity</strong></td>
+            <td><strong>name</strong></td>
+            <td><strong>category</strong></td>
+            <td><strong>description</strong></td>
+            <td><strong>images</strong></td>
         </tr>
 
-   <?php  } ?>
+        <?php while ($row = mysqli_fetch_array($query)){ ?>
+            <tr>
+                <td><?php echo $row['product_id']; ?></td>
+                <td><?php echo $row['price']; ?></td>
+                <td><?php echo $row['quantity']; ?></td>
+                <td><?php echo $row['name']; ?></td>
+                <td><?php echo $row['category']; ?></td>
+                <td><?php echo $row['description']; ?></td>
+                <td><?php echo $row['images']; ?></td>
 
-</table>
+            </tr>
 
-<!--
-filtering the database according to these criteria
-1. section (fruits, veggies)
-2. price (low to high)
-3.
+       <?php  } ?>
 
--->
+    </table>
 
+    <!--
+    filtering the database according to these criteria
+    1. section (fruits, veggies)
+    2. price (low to high)
+    -->
+
+
+    <!--including the footer in the website -->
+    <?php
+        include '../php/footer.php';
+    ?>
+
+</body>
