@@ -24,11 +24,6 @@ The globalisation process has led the online shopping malls develop more and mor
     <th>GitHub Username</th>
   </tr>
   <tr>
-    <td>Jiayi Chen</td>
-    <td>40110997</td>
-    <td><a href="https://github.com/JIAYI615" target="_blank">github.com/JIAYI615</a></td>
-  </tr>
-  <tr>
     <td>Aminata LO</td>
     <td>40163325</td>
     <td><a href="https://github.com/programer653" target="_blank">github.com/programer653</a></td>
@@ -42,11 +37,6 @@ The globalisation process has led the online shopping malls develop more and mor
     <td>Asha Islam</td>
     <td>40051511</td>
     <td><a href="https://github.com/asha97" target="_blank">github.com/asha97</a></td>
-  </tr>
-   <tr>
-    <td>Zayneb Mehdi</td>
-    <td>40109417</td>
-    <td><a href="https://github.com/BrainOverfl0w" target="_blank">github.com/BrainOverfl0w</a></td>
   </tr>
 </table>
 
